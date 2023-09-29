@@ -1,3 +1,27 @@
+macro_uumlautu: macro_uumlautu{
+compatible = "zmk,behavior-macro";
+label = "macro_uumlautu";
+#binding-cells = <0>;
+bindings = <&kp LEFT_WIN>, <&kp LEFT_SHIFT>, <&kp U>, <&kp COLON>;
+};
+macro_uumlautl: macro_uumlautl{
+compatible = "zmk,behavior-macro";
+label = "macro_uumlautl";
+#binding-cells = <0>;
+bindings = <&kp LEFT_WIN>, <&kp U>, <&kp COLON>;
+};
+macro_oumlautu: macro_oumlautu{
+compatible = "zmk,behavior-macro";
+label = "macro_oumlautu";
+#binding-cells = <0>;
+bindings = <&kp LEFT_WIN>, <&kp LEFT_SHIFT>, <&kp O>, <&kp COLON>;
+};
+macro_oumlautl: macro_oumlautl{
+compatible = "zmk,behavior-macro";
+label = "macro_oumlautl";
+#binding-cells = <0>;
+bindings = <&kp LEFT_WIN>, <&kp O>, <&kp COLON>;
+};
 macro_aumlautu: macro_aumlautu{
 compatible = "zmk,behavior-macro";
 label = "macro_aumlautu";
