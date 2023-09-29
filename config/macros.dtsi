@@ -1,3 +1,15 @@
+macro_aumlautu: macro_aumlautu{
+compatible = "zmk,behavior-macro";
+label = "macro_aumlautu";
+#binding-cells = <0>;
+bindings = <&kp LEFT_WIN>, <&kp LEFT_SHIFT>, <&kp A>, <&kp COLON>;
+};
+macro_aumlautl: macro_aumlautl{
+compatible = "zmk,behavior-macro";
+label = "macro_aumlautl";
+#binding-cells = <0>;
+bindings = <&kp LEFT_GUI>, <&kp A>, <&kp COLON>;
+};
 macro_mdimg: macro_mdimg{
 compatible = "zmk,behavior-macro";
 label = "macro_mdimg";
