@@ -1,8 +1,8 @@
-macro_macro_mdimg: macro_macro_mdimg{
+macro_mdimg: macro_mdimg{
 compatible = "zmk,behavior-macro";
-label = "macro_macro_mdimg";
+label = "macro_mdimg";
 #binding-cells = <0>;
-bindings = <&kp EXCL>, <&kp LEFT_BRACKET>, <&kp PIPE>, <&kp NUMBER_3>, <&kp NUMBER_5>, <&kp NUMBER_0>, <&kp RIGHT_BRACKET>, <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>;
+bindings = <&kp EXCLAMATION>, <&kp LEFT_BRACKET>, <&kp PIPE>, <&kp NUMBER_3>, <&kp NUMBER_5>, <&kp NUMBER_0>, <&kp RIGHT_BRACKET>, <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>, <&kp HOME>, <&kp RIGHT_ARROW>, <&kp RIGHT_ARROW>;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
