@@ -1,3 +1,27 @@
+macro_score: macro_score{
+compatible = "zmk,behavior-macro";
+label = "macro_score";
+#binding-cells = <0>;
+bindings = <&kp LESS_THAN>, <&kp U>, <&kp GREATER_THAN>, <&kp LESS_THAN>, <&kp SLASH>, <&kp U>, <&kp GREATER_THAN>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>;
+};
+macro_bold: macro_bold{
+compatible = "zmk,behavior-macro";
+label = "macro_bold";
+#binding-cells = <0>;
+bindings = <&kp STAR>, <&kp STAR>, <&kp STAR>, <&kp ASTERISK>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>;
+};
+macro_strike: macro_strike{
+compatible = "zmk,behavior-macro";
+label = "macro_strike";
+#binding-cells = <0>;
+bindings = <&kp TILDE>, <&kp TILDE>, <&kp LEFT_ARROW>;
+};
+macro_ticks: macro_ticks{
+compatible = "zmk,behavior-macro";
+label = "macro_ticks";
+#binding-cells = <0>;
+bindings = <&kp GRAVE>, <&kp GRAVE>, <&kp LEFT_ARROW>;
+};
 macro_c_dr: macro_c_dr{
 compatible = "zmk,behavior-macro";
 label = "macro_c_dr";
