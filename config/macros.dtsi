@@ -1,3 +1,15 @@
+macro_ntildeu: macro_ntildeu{
+compatible = "zmk,behavior-macro";
+label = "macro_ntildeu";
+#binding-cells = <0>;
+bindings = <&kp LEFT_GUI>, <&kp LS(N)>, <&kp TILDE>;
+};
+macro_ntildel: macro_ntildel{
+compatible = "zmk,behavior-macro";
+label = "macro_ntildel";
+#binding-cells = <0>;
+bindings = <&kp LEFT_GUI>, <&kp N>, <&kp TILDE>;
+};
 macro_paste: macro_paste{
 compatible = "zmk,behavior-macro";
 label = "macro_paste";
@@ -26,7 +38,7 @@ macro_uumlautu: macro_uumlautu{
 compatible = "zmk,behavior-macro";
 label = "macro_uumlautu";
 #binding-cells = <0>;
-bindings = <&kp LEFT_WIN>, <&kp LEFT_SHIFT>, <&kp LS(U)>, <&kp COLON>;
+bindings = <&kp LEFT_GUI>, <&kp LS(U)>, <&kp COLON>;
 };
 macro_uumlautl: macro_uumlautl{
 compatible = "zmk,behavior-macro";
@@ -38,7 +50,7 @@ macro_oumlautu: macro_oumlautu{
 compatible = "zmk,behavior-macro";
 label = "macro_oumlautu";
 #binding-cells = <0>;
-bindings = <&kp LEFT_WIN>, <&kp LEFT_SHIFT>, <&kp LS(O)>, <&kp COLON>;
+bindings = <&kp LEFT_WIN>, <&kp LS(O)>, <&kp COLON>;
 };
 macro_oumlautl: macro_oumlautl{
 compatible = "zmk,behavior-macro";
@@ -50,7 +62,7 @@ macro_aumlautu: macro_aumlautu{
 compatible = "zmk,behavior-macro";
 label = "macro_aumlautu";
 #binding-cells = <0>;
-bindings = <&kp LEFT_WIN>, <&kp LEFT_SHIFT>, <&kp LS(A)>, <&kp COLON>;
+bindings = <&kp LEFT_WIN>, <&kp LS(A)>, <&kp COLON>;
 };
 macro_aumlautl: macro_aumlautl{
 compatible = "zmk,behavior-macro";
