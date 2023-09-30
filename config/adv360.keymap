@@ -89,11 +89,11 @@
 
         layer_Layers {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans             &to 0                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans   &to 0   &to 1   &to 2   &to 3   &to 4            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans   &to 0  &trans
+  &none   &none   &none   &none   &none   &none            &to 0                                                   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none   &none            &none                                                   &none   &none   &none   &none   &none   &none   &none
+  &none   &to 0   &to 1   &to 2   &to 3   &to 4            &none   &none   &none                   &none   &none   &none   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none   &none                            &none                   &none                   &none   &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none                    &none   &none   &none                   &none   &none   &none           &none   &none   &none   &to 0   &none
             >;
         };
 
