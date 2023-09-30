@@ -1,3 +1,15 @@
+macro_emacronu: macro_emacronu{
+compatible = "zmk,behavior-macro";
+label = "macro_emacronu";
+#binding-cells = <0>;
+bindings = <&kp LEFT_GUI>, <&kp E>, <&kp CARET>;
+};
+macro_range: macro_range{
+compatible = "zmk,behavior-macro";
+label = "macro_range";
+#binding-cells = <0>;
+bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>, <&kp LEFT_ARROW>;
+};
 macro_hyper: macro_hyper{
 compatible = "zmk,behavior-macro";
 label = "macro_hyper";
