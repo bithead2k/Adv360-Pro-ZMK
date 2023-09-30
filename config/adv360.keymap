@@ -79,11 +79,11 @@
 
         layer_UTF8 {
             bindings = <
- &trans           &trans     &trans    &macro_quotes  &trans  &trans            &trans                                                  &trans             &trans           &trans  &trans           &trans  &trans  &trans
- &trans           &trans     &trans    &macro_parens  &trans  &trans            &trans                                                  &trans             &trans  &macro_uumlautl  &trans  &macro_oumlautl  &trans  &trans
- &trans  &macro_aumlautl  &macro_ss    &macro_braces  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &macro_hoplophobe           &trans  &trans           &trans  &trans  &trans
- &trans           &trans     &trans  &macro_brackets  &trans  &trans                            &trans                  &trans                     &macro_ntildel     &macro_mdimg  &trans           &trans  &trans  &trans
- &trans           &trans     &trans   &macro_dquotes  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                              &trans  &trans           &trans   &mo 0  &trans
+ &trans           &trans          &trans    &macro_quotes  &trans  &trans            &trans                                                  &trans             &trans           &trans  &trans           &trans  &trans  &trans
+ &trans           &trans          &trans    &macro_parens  &trans  &trans            &trans                                                  &trans             &trans  &macro_uumlautl  &trans  &macro_oumlautl  &trans  &trans
+ &trans  &macro_aumlautl       &macro_ss    &macro_braces  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &macro_hoplophobe           &trans  &trans           &trans  &trans  &trans
+ &trans           &trans  &macro_vimexit  &macro_brackets  &trans  &trans                            &trans                  &trans                     &macro_ntildel     &macro_mdimg  &trans           &trans  &trans  &trans
+ &trans           &trans          &trans   &macro_dquotes  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                              &trans  &trans           &trans   &mo 0  &trans
             >;
         };
 
