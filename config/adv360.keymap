@@ -39,7 +39,7 @@
 
         default_layer {
             bindings = <
-    &kp EQUAL          &kp N1              &kp N2          &kp N3     &kp N4  &kp N5               &tog 1                                                                  &mo 3  &kp N6  &kp N7           &kp N8               &kp N9                   &kp N0   &kp MINUS
+    &kp EQUAL          &kp N1              &kp N2          &kp N3     &kp N4  &kp N5                &to 5                                                                  &mo 3  &kp N6  &kp N7           &kp N8               &kp N9                   &kp N0   &kp MINUS
       &kp ESC           &kp Q               &kp W           &kp E      &kp R   &kp T                &mo 2                                                                  &mo 2   &kp Y   &kp U            &kp I                &kp O                    &kp P    &kp BSLH
       &kp TAB  &mt LEFT_GUI A  &mt LEFT_CONTROL S  &mt LEFT_ALT D      &kp F   &kp G                &mo 4  &kp LCTRL  &kp LALT                   &kp LGUI   &kp RCTRL      &mo 4   &kp H   &kp J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_GUI SEMICOLON     &kp SQT
         &kp Z      &kp LSHIFT               &kp X           &kp C      &kp V   &kp B                                  &kp HOME                  &kp PG_UP                          &kp N   &kp M        &kp COMMA              &kp DOT                &kp RSHFT    &kp FSLH
@@ -49,17 +49,17 @@
 
         layer_keypad {
             bindings = <
- &kp EQUAL          &kp N1    &kp N2    &kp N3     &kp N4  &kp N5               &trans                                                                      &mo 3             &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp MINUS
-   &kp TAB           &kp Q     &kp W     &kp E      &kp R   &kp T                &none                                                                      &none              &kp Y   &kp KP_N7     &kp KP_N8      &kp KP_N9     &kp KP_MINUS   &kp BSLH
-   &kp ESC           &kp A     &kp S     &kp D      &kp F   &kp G                &none      &kp LCTRL  &kp LALT                   &kp LGUI   &kp RCTRL      &none  &macro_hoplophobe   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS    &kp SQT
-     &kp Z  &kp LEFT_SHIFT     &kp X     &kp C      &kp V   &kp B                                      &kp HOME                  &kp PG_UP                                     &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER  &kp RSHFT
-     &mo 2       &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                    &kp ENTER  &kp BACKSPACE   &kp END                  &kp PG_DN  &kp DELETE  &kp KP_N0                      &kp KP_N0     &kp KP_N0     &kp KP_DOT            &mo 2      &mo 2
+ &kp KP_EQUAL          &kp N1        &kp N2     &kp N3     &kp N4     &kp N5                &to 5                                                                      &mo 3             &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY   &kp KP_MINUS
+      &kp ESC       &kp KP_N1     &kp KP_N2  &kp KP_N3  &kp KP_N4  &kp KP_N5                &none                                                                      &none          &kp KP_N6   &kp KP_N7     &kp KP_N8      &kp KP_N9        &kp KP_N0  &kp KP_DIVIDE
+      &kp TAB           &kp A         &kp S      &kp D      &kp F      &kp G                &none      &kp LCTRL  &kp LALT                   &kp LGUI   &kp RCTRL      &none  &macro_hoplophobe   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS   &kp KP_ENTER
+        &kp Z  &kp LEFT_SHIFT         &kp X      &kp C      &kp V      &kp B                                      &kp HOME                  &kp PG_UP                                     &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER      &kp RSHFT
+ &macro_hyper     &macro_copy  &macro_paste   &kp LEFT  &kp RIGHT                       &kp ENTER  &kp BACKSPACE   &kp END                  &kp PG_DN  &kp DELETE  &kp KP_N0                      &kp KP_N0     &kp KP_N0     &kp KP_DOT            &mo 2     &macro_meh
             >;
         };
 
         layer_fn {
             bindings = <
-  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &tog 1                                                   &mo 3             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5  &kp F6             &to 5                                                   &mo 3             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
  &kp F16  &kp F24  &trans  &trans  &trans  &trans             &none                                                   &none             &trans  &trans  &trans   &trans   &trans  &kp F17
  &kp F15  &kp F23  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &macro_hoplophobe  &trans  &trans   &trans   &trans  &kp F18
  &kp F14  &kp F22  &trans  &trans  &trans  &trans                            &trans                  &trans                             &trans  &trans  &trans   &trans   &trans  &kp F19
@@ -69,7 +69,7 @@
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &none                                                                          &trans   &none       &none       &none   &none   &none   &none
+  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &to 5                                                                          &trans   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
@@ -79,11 +79,21 @@
 
         layer_UTF8 {
             bindings = <
- &trans           &trans          &trans    &macro_quotes  &trans  &trans            &trans                                                  &trans             &trans           &trans  &trans           &trans  &trans  &trans
+ &trans           &trans          &trans    &macro_quotes  &trans  &trans             &to 5                                                  &trans             &trans           &trans  &trans           &trans  &trans  &trans
  &trans      &macro_quit          &trans    &macro_parens  &trans  &trans            &trans                                                  &trans             &trans  &macro_uumlautl  &trans  &macro_oumlautl  &trans  &trans
  &trans  &macro_aumlautl       &macro_ss    &macro_braces  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &macro_hoplophobe           &trans  &trans           &trans  &trans  &trans
  &trans           &trans  &macro_vimexit  &macro_brackets  &trans  &trans                            &trans                  &trans                     &macro_ntildel     &macro_mdimg  &trans           &trans  &trans  &trans
- &trans           &trans          &trans   &macro_dquotes  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                              &trans  &trans           &trans   &mo 0  &trans
+ &trans           &trans          &trans   &macro_dquotes  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                              &trans  &trans           &trans   &mo 5  &trans
+            >;
+        };
+
+        layer_Layers {
+            bindings = <
+ &trans  &trans  &trans  &trans  &trans  &trans             &to 0                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans   &to 0   &to 1   &to 2   &to 3   &to 4            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans   &to 0  &trans
             >;
         };
 
