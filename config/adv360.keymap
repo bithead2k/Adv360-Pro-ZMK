@@ -49,7 +49,7 @@
 
         layer_keypad {
             bindings = <
- &kp KP_EQUAL          &kp N1        &kp N2     &kp N3     &kp N4     &kp N5                &to 5                                                                      &mo 3             &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY   &kp KP_MINUS
+ &kp KP_EQUAL          &kp N1        &kp N2     &kp N3     &kp N4     &kp N5                &to 5                                                                      &to 0             &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY   &kp KP_MINUS
       &kp ESC       &kp KP_N1     &kp KP_N2  &kp KP_N3  &kp KP_N4  &kp KP_N5                &none                                                                      &none          &kp KP_N6   &kp KP_N7     &kp KP_N8      &kp KP_N9        &kp KP_N0  &kp KP_DIVIDE
       &kp TAB           &kp A         &kp S      &kp D      &kp F      &kp G                &none      &kp LCTRL  &kp LALT                   &kp LGUI   &kp RCTRL      &none  &macro_hoplophobe   &kp KP_N4     &kp KP_N5      &kp KP_N6      &kp KP_PLUS   &kp KP_ENTER
         &kp Z  &kp LEFT_SHIFT         &kp X      &kp C      &kp V      &kp B                                      &kp HOME                  &kp PG_UP                                     &kp N   &kp KP_N1     &kp KP_N2      &kp KP_N3     &kp KP_ENTER      &kp RSHFT
@@ -59,11 +59,11 @@
 
         layer_fn {
             bindings = <
-  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5  &kp F6             &to 5                                                   &mo 3             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5  &kp F6             &to 5                                                   &to 0             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
  &kp F16  &kp F24  &trans  &trans  &trans  &trans             &none                                                   &none             &trans  &trans  &trans   &trans   &trans  &kp F17
  &kp F15  &kp F23  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &macro_hoplophobe  &trans  &trans   &trans   &trans  &kp F18
  &kp F14  &kp F22  &trans  &trans  &trans  &trans                            &trans                  &trans                             &trans  &trans  &trans   &trans   &trans  &kp F19
- &kp F13  &kp F21  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                     &trans  &trans   &trans    &mo 4  &kp F20
+ &kp F13  &kp F21  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                     &trans  &trans   &trans    &mo 0  &kp F20
             >;
         };
 
@@ -79,7 +79,7 @@
 
         layer_UTF8 {
             bindings = <
- &trans           &trans          &trans    &macro_quotes        &trans  &macro_emacronu             &to 5                                                  &trans             &trans           &trans       &trans           &trans  &trans  &trans
+ &trans           &trans          &trans    &macro_quotes        &trans  &macro_emacronu             &to 5                                                   &to 0             &trans           &trans       &trans           &trans  &trans  &trans
  &trans      &macro_quit          &trans    &macro_parens        &trans           &trans            &trans                                                  &trans             &trans  &macro_uumlautl       &trans  &macro_oumlautl  &trans  &trans
  &trans  &macro_aumlautl       &macro_ss    &macro_braces  &macro_range           &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &macro_hoplophobe           &trans  &macro_sign           &trans  &trans  &trans
  &trans           &trans  &macro_vimexit  &macro_brackets        &trans           &trans                            &trans                  &trans                     &macro_ntildel     &macro_mdimg       &trans           &trans  &trans  &trans
