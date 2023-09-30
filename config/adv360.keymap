@@ -79,11 +79,11 @@
 
         layer_UTF8 {
             bindings = <
- &trans           &trans     &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans           &trans  &trans           &trans  &trans  &trans
- &trans           &trans     &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &macro_uumlautl  &trans  &macro_oumlautl  &trans  &trans
- &trans  &macro_aumlautl  &macro_ss  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans           &trans  &trans           &trans  &trans  &trans
- &trans           &trans     &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans           &trans  &trans           &trans  &trans  &trans
- &trans           &trans     &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                   &trans  &trans           &trans  &trans  &trans
+ &trans           &trans     &trans  &trans  &trans  &trans            &trans                                                  &trans             &trans           &trans  &trans           &trans  &trans  &trans
+ &trans           &trans     &trans  &trans  &trans  &trans            &trans                                                  &trans             &trans  &macro_uumlautl  &trans  &macro_oumlautl  &trans  &trans
+ &trans  &macro_aumlautl  &macro_ss  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &macro_hoplophobe           &trans  &trans           &trans  &trans  &trans
+ &trans           &trans     &trans  &trans  &trans  &trans                            &trans                  &trans                             &trans           &trans  &trans           &trans  &trans  &trans
+ &trans           &trans     &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                              &trans  &trans           &trans  &trans  &trans
             >;
         };
 
