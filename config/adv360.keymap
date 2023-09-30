@@ -59,11 +59,11 @@
 
         layer_fn {
             bindings = <
-  &kp F1   &kp F2  &kp F3  &kp F4  &kp F5  &kp F6             &to 5                                                   &to 0             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &kp F16  &kp F24  &trans  &trans  &trans  &trans             &none                                                   &none             &trans  &trans  &trans   &trans   &trans  &kp F17
- &kp F15  &kp F23  &trans  &trans  &trans  &trans             &none  &trans  &trans                  &trans  &trans   &none  &macro_hoplophobe  &trans  &trans   &trans   &trans  &kp F18
- &kp F14  &kp F22  &trans  &trans  &trans  &trans                            &trans                  &trans                             &trans  &trans  &trans   &trans   &trans  &kp F19
- &kp F13  &kp F21  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                     &trans  &trans   &trans    &mo 0  &kp F20
+  &kp F1   &kp F2          &kp F3          &kp F4           &kp F5  &kp F6             &to 5                                                   &to 0             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+ &kp F16  &kp F24     &macro_c_ul    &kp UP_ARROW      &macro_c_ur  &trans             &none                                                   &none             &trans  &trans  &trans   &trans   &trans  &kp F17
+ &kp F15  &kp F23  &kp LEFT_ARROW          &trans  &kp RIGHT_ARROW  &trans             &none  &trans  &trans                  &trans  &trans   &none  &macro_hoplophobe  &trans  &trans   &trans   &trans  &kp F18
+ &kp F14  &kp F22     &macro_c_dl  &kp DOWN_ARROW      &macro_c_dr  &trans                            &trans                  &trans                             &trans  &trans  &trans   &trans   &trans  &kp F19
+ &kp F13  &kp F21          &trans          &trans           &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                     &trans  &trans   &trans    &mo 0  &kp F20
             >;
         };
 
