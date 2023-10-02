@@ -1,3 +1,99 @@
+macro_md_example: macro_md_example{
+compatible = "zmk,behavior-macro";
+label = "macro_md_example";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp E>, <&kp X>, <&kp A>, <&kp M>, <&kp P>, <&kp L>, <&kp E>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LEFT_GUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_bug: macro_md_bug{
+compatible = "zmk,behavior-macro";
+label = "macro_md_bug";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp B>, <&kp U>, <&kp G>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LEFT_GUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_success: macro_md_success{
+compatible = "zmk,behavior-macro";
+label = "macro_md_success";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp S>, <&kp U>, <&kp C>, <&kp C>, <&kp E>, <&kp S>, <&kp S>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LGUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_note: macro_md_note{
+compatible = "zmk,behavior-macro";
+label = "macro_md_note";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp N>, <&kp O>, <&kp T>, <&kp E>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LEFT_GUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_danger: macro_md_danger{
+compatible = "zmk,behavior-macro";
+label = "macro_md_danger";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp D>, <&kp A>, <&kp N>, <&kp G>, <&kp E>, <&kp R>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LGUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_fail: macro_md_fail{
+compatible = "zmk,behavior-macro";
+label = "macro_md_fail";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp F>, <&kp A>, <&kp I>, <&kp L>, <&kp U>, <&kp R>, <&kp E>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LEFT_GUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_warning: macro_md_warning{
+compatible = "zmk,behavior-macro";
+label = "macro_md_warning";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp W>, <&kp A>, <&kp R>, <&kp N>, <&kp I>, <&kp N>, <&kp G>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LEFT_GUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_tip: macro_md_tip{
+compatible = "zmk,behavior-macro";
+label = "macro_md_tip";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp T>, <&kp I>, <&kp P>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LGUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_todo: macro_md_todo{
+compatible = "zmk,behavior-macro";
+label = "macro_md_todo";
+#binding-cells = <0>;
+bindings = <&kp GT>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp T>, <&kp O>, <&kp D>, <&kp O>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LEFT_GUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_info: macro_md_info{
+compatible = "zmk,behavior-macro";
+label = "macro_md_info";
+#binding-cells = <0>;
+bindings = <&kp GT>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp I>, <&kp N>, <&kp F>, <&kp O>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LGUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_question: macro_md_question{
+compatible = "zmk,behavior-macro";
+label = "macro_md_question";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp Q>, <&kp U>, <&kp E>, <&kp S>, <&kp T>, <&kp I>, <&kp O>, <&kp N>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LEFT_GUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_md_quote: macro_md_quote{
+compatible = "zmk,behavior-macro";
+label = "macro_md_quote";
+#binding-cells = <0>;
+bindings = <&kp GREATER_THAN>, <&kp LEFT_BRACKET>, <&kp EXCLAMATION>, <&kp Q>, <&kp U>, <&kp O>, <&kp T>, <&kp E>, <&kp RIGHT_BRACKET>, <&kp SPACE>, <&kp LGUI>, <&kp MINUS>, <&kp MINUS>, <&kp MINUS>, <&kp SPACE>;
+};
+macro_toc: macro_toc{
+compatible = "zmk,behavior-macro";
+label = "macro_toc";
+#binding-cells = <0>;
+bindings = <&kp LEFT_BRACKET>, <&kp SPACE>, <&kp LS(T)>, <&kp LS(O)>, <&kp LS(C)>, <&kp SPACE>, <&kp RIGHT_BRACKET>, <&kp ENTER>;
+};
+macro_h4: macro_h4{
+compatible = "zmk,behavior-macro";
+label = "macro_h4";
+#binding-cells = <0>;
+bindings = <&kp ESC>, <&kp LS(G)>, <&kp LS(O)>, <&kp ENTER>, <&kp HASH>, <&kp HASH>, <&kp HASH>, <&kp HASH>, <&kp SPACE>;
+};
+macro_h3: macro_h3{
+compatible = "zmk,behavior-macro";
+label = "macro_h3";
+#binding-cells = <0>;
+bindings = <&kp ESCAPE>, <&kp LS(G)>, <&kp LS(O)>, <&kp ENTER>, <&kp HASH>, <&kp HASH>, <&kp HASH>, <&kp SPACE>;
+};
+macro_h2: macro_h2{
+compatible = "zmk,behavior-macro";
+label = "macro_h2";
+#binding-cells = <0>;
+bindings = <&kp ESC>, <&kp LS(G)>, <&kp LS(O)>, <&kp ENTER>, <&kp HASH>, <&kp HASH>, <&kp SPACE>;
+};
 macro_h1: macro_h1{
 compatible = "zmk,behavior-macro";
 label = "macro_h1";
