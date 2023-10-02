@@ -1,3 +1,15 @@
+macro_ibold: macro_ibold{
+compatible = "zmk,behavior-macro";
+label = "macro_ibold";
+#binding-cells = <0>;
+bindings = <&kp STAR>, <&kp STAR>, <&kp STAR>, <&kp STAR>, <&kp STAR>, <&kp STAR>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>;
+};
+macro_italic: macro_italic{
+compatible = "zmk,behavior-macro";
+label = "macro_italic";
+#binding-cells = <0>;
+bindings = <&kp STAR>, <&kp STAR>, <&kp LEFT_ARROW>;
+};
 macro_score: macro_score{
 compatible = "zmk,behavior-macro";
 label = "macro_score";
