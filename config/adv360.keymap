@@ -59,11 +59,11 @@
 
         layer_fn {
             bindings = <
-  &kp F1   &kp F2          &kp F3          &kp F4           &kp F5  &kp F6            &to 5                                                   &to 0             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &kp F16  &kp F20     &macro_c_ul    &kp UP_ARROW      &macro_c_ur   &none            &to 0                                                   &to 0              &none   &none   &none    &none    &none  &kp F24
- &kp F15  &kp F19  &kp LEFT_ARROW           &none  &kp RIGHT_ARROW   &none            &none   &none   &none                   &none   &none   &none  &macro_hoplophobe   &none   &none    &none    &none  &kp F23
- &kp F14  &kp F18     &macro_c_dl  &kp DOWN_ARROW      &macro_c_dr   &none                            &none                   &none                              &none   &none   &none    &none    &none  &kp F22
- &kp F13  &kp F17           &none           &none            &none                    &none   &none   &none                   &none   &none   &none                      &none   &none    &none    &mo 0  &kp F21
+  &kp F1   &kp F2          &kp F3          &kp F4           &kp F5           &kp F6            &to 5                                                   &to 0             &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+ &kp F16  &kp F20     &macro_c_ul    &kp UP_ARROW      &macro_c_ur      &macro_c_ur            &to 0                                                   &to 0              &none   &none   &none    &none    &none  &kp F24
+ &kp F15  &kp F19  &kp LEFT_ARROW           &none  &kp RIGHT_ARROW  &kp RIGHT_ARROW            &none   &none   &none                   &none   &none   &none  &macro_hoplophobe   &none   &none    &none    &none  &kp F23
+ &kp F14  &kp F18     &macro_c_dl  &kp DOWN_ARROW      &macro_c_dr            &none                            &none                   &none                              &none   &none   &none    &none    &none  &kp F22
+ &kp F13  &kp F17     &macro_c_dl  &kp DOWN_ARROW      &macro_c_dr                             &none   &none   &none                   &none   &none   &none                      &none   &none    &none    &mo 0  &kp F21
             >;
         };
 
@@ -94,16 +94,6 @@
   &none   &to 0   &to 1   &to 2   &to 3   &to 4            &none   &none   &none                   &none   &none   &none   &none   &none   &none   &none   &none   &none
   &none   &none   &none   &none   &none   &none                            &none                   &none                   &none   &none   &none   &none   &none   &none
   &none   &none   &none   &none   &none                    &none   &none   &none                   &none   &none   &none           &none   &none   &none   &to 0   &none
-            >;
-        };
-
-        layer_Layer__6 {
-            bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
