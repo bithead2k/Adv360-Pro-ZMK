@@ -248,7 +248,7 @@ macro_uumlautl: macro_uumlautl{
 compatible = "zmk,behavior-macro";
 label = "macro_uumlautl";
 #binding-cells = <0>;
-bindings = <&kp LEFT_ALT>, <&kp U>, <&kp DOUBLE_QUOTES>;
+bindings = <&kp RIGHT_ALT>, <&kp U>, <&kp DOUBLE_QUOTES>;
 };
 macro_oumlautu: macro_oumlautu{
 compatible = "zmk,behavior-macro";
@@ -260,7 +260,7 @@ macro_oumlautl: macro_oumlautl{
 compatible = "zmk,behavior-macro";
 label = "macro_oumlautl";
 #binding-cells = <0>;
-bindings = <&kp LEFT_ALT>, <&kp O>, <&kp DOUBLE_QUOTES>;
+bindings = <&kp RIGHT_ALT>, <&kp O>, <&kp DOUBLE_QUOTES>;
 };
 macro_aumlautu: macro_aumlautu{
 compatible = "zmk,behavior-macro";
@@ -272,7 +272,7 @@ macro_aumlautl: macro_aumlautl{
 compatible = "zmk,behavior-macro";
 label = "macro_aumlautl";
 #binding-cells = <0>;
-bindings = <&kp LEFT_ALT>, <&kp A>, <&kp DOUBLE_QUOTES>;
+bindings = <&kp RIGHT_ALT>, <&kp A>, <&kp DOUBLE_QUOTES>;
 };
 macro_mdimg: macro_mdimg{
 compatible = "zmk,behavior-macro";
