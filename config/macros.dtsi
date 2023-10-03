@@ -1,3 +1,9 @@
+macro_pregunta: macro_pregunta{
+compatible = "zmk,behavior-macro";
+label = "macro_pregunta";
+#binding-cells = <0>;
+bindings = <&kp RIGHT_ALT>, <&kp QUESTION>, <&kp QUESTION>;
+};
 macro_md_example: macro_md_example{
 compatible = "zmk,behavior-macro";
 label = "macro_md_example";
