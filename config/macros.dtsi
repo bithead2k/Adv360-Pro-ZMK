@@ -98,7 +98,7 @@ macro_h1: macro_h1{
 compatible = "zmk,behavior-macro";
 label = "macro_h1";
 #binding-cells = <0>;
-bindings = <&kp ESCAPE>, <&kp LS(G)>, <&kp LS(O)>, <&kp ENTER>, <&kp HASH>, <&kp ENTER>, <&kp ENTER>, <&kp LS(E)>, <&kp N>, <&kp T>, <&kp R>, <&kp Y>, <&kp COLON>, <&kp SPACE>, <&kp STAR>, <&kp STAR>, <&kp LA(D)>, <&kp STAR>, <&kp STAR>, <&kp UP_ARROW>, <&kp UP>, <&kp END>;
+bindings = <&kp ESCAPE>, <&kp LS(G)>, <&kp LS(O)>, <&kp ENTER>, <&kp HASH>, <&kp ENTER>, <&kp ENTER>, <&kp LS(E)>, <&kp N>, <&kp T>, <&kp R>, <&kp Y>, <&kp COLON>, <&kp SPACE>, <&kp STAR>, <&kp STAR>, <&kp LA(D)>, <&kp SPACE>, <&kp LA(T)>, <&kp STAR>, <&kp STAR>, <&kp UP_ARROW>, <&kp UP>, <&kp END>, <&kp SPACE>;
 };
 macro_ibold: macro_ibold{
 compatible = "zmk,behavior-macro";
@@ -128,7 +128,7 @@ macro_strike: macro_strike{
 compatible = "zmk,behavior-macro";
 label = "macro_strike";
 #binding-cells = <0>;
-bindings = <&kp TILDE>, <&kp TILDE>, <&kp LEFT_ARROW>;
+bindings = <&kp TILDE>, <&kp TILDE>, <&kp TILDE>, <&kp TILDE>, <&kp LEFT_ARROW>, <&kp LEFT_ARROW>;
 };
 macro_ticks: macro_ticks{
 compatible = "zmk,behavior-macro";
@@ -170,7 +170,7 @@ macro_emacronu: macro_emacronu{
 compatible = "zmk,behavior-macro";
 label = "macro_emacronu";
 #binding-cells = <0>;
-bindings = <&kp LEFT_GUI>, <&kp E>, <&kp CARET>;
+bindings = <&kp LEFT_GUI>, <&kp LS(E)>, <&kp CARET>;
 };
 macro_range: macro_range{
 compatible = "zmk,behavior-macro";
@@ -248,7 +248,7 @@ macro_uumlautl: macro_uumlautl{
 compatible = "zmk,behavior-macro";
 label = "macro_uumlautl";
 #binding-cells = <0>;
-bindings = <&kp LEFT_WIN>, <&kp U>, <&kp COLON>;
+bindings = <&kp LEFT_ALT>, <&kp U>, <&kp DOUBLE_QUOTES>;
 };
 macro_oumlautu: macro_oumlautu{
 compatible = "zmk,behavior-macro";
@@ -260,7 +260,7 @@ macro_oumlautl: macro_oumlautl{
 compatible = "zmk,behavior-macro";
 label = "macro_oumlautl";
 #binding-cells = <0>;
-bindings = <&kp LEFT_WIN>, <&kp O>, <&kp COLON>;
+bindings = <&kp LEFT_ALT>, <&kp O>, <&kp DOUBLE_QUOTES>;
 };
 macro_aumlautu: macro_aumlautu{
 compatible = "zmk,behavior-macro";
@@ -272,7 +272,7 @@ macro_aumlautl: macro_aumlautl{
 compatible = "zmk,behavior-macro";
 label = "macro_aumlautl";
 #binding-cells = <0>;
-bindings = <&kp LEFT_GUI>, <&kp A>, <&kp COLON>;
+bindings = <&kp LEFT_ALT>, <&kp A>, <&kp DOUBLE_QUOTES>;
 };
 macro_mdimg: macro_mdimg{
 compatible = "zmk,behavior-macro";
