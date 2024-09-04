@@ -128,6 +128,118 @@
             bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(Q) &kp LS(U) &kp LS(O) &kp LS(T) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
             label = "MACRO_QUOTE";
         };
+
+        macro_toc: macro_toc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp SPACE &kp LS(T) &kp LS(O) &kp LS(C) &kp SPACE &kp LBRC &kp RET>;
+            label = "MACRO_TOC";
+        };
+
+        macro_h4: macro_h4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(G) &kp LS(O) &kp RET &kp STAR &kp STAR &kp STAR &kp STAR &kp SPACE>;
+            label = "MACRO_H4";
+        };
+
+        macro_h3: macro_h3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(G) &kp LS(O) &kp STAR &kp STAR &kp STAR &kp SPACE>;
+            label = "MACRO_H3";
+        };
+
+        macro_h2: macro_h2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp LS(G) &kp LS(O) &kp STAR &kp STAR &kp SPACE>;
+            label = "MACRO_H2";
+        };
+
+        macro_h1: macro_h1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp ESCAPE &kp LS(G) &kp LS(G) &kp O &kp RET &kp RET &kp RET &kp LS(E) &kp N &kp T &kp R &kp Y &kp COLON &kp SPACE &kp STAR &kp STAR &kp LA(D) &kp SPACE &kp LA(T) &kp STAR &kp STAR &kp UP_ARROW &kp UP_ARROW &kp POUND &kp SPACE>;
+            label = "MACRO_H1";
+        };
+
+        macro_ibold: macro_ibold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp STAR &kp LEFT &kp LEFT_ARROW &kp LEFT>;
+            label = "MACRO_IBOLD";
+        };
+
+        macro_italic: macro_italic {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp STAR &kp STAR &kp LEFT_ARROW>;
+            label = "MACRO_ITALIC";
+        };
+
+        macro_score: macro_score {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp U &kp GT &kp LT &kp FSLH &kp U &kp GT &kp LEFT_ARROW &kp LEFT_ARROW &kp LEFT &kp LEFT_ARROW>;
+            label = "MACRO_SCORE";
+        };
+
+        macro_bold: macro_bold {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp STAR &kp STAR &kp STAR &kp STAR &kp LEFT_ARROW &kp LEFT>;
+            label = "MACRO_BOLD";
+        };
+
+        macro_strike: macro_strike {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp TILDE &kp TILDE &kp TILDE &kp LEFT &kp LEFT>;
+            label = "MACRO_STRIKE";
+        };
+
+        macro_ticks: macro_ticks {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp LEFT>;
+            label = "MACRO_TICKS";
+        };
+
+        macro_c_dr: macro_c_dr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN &kp RIGHT_ARROW>;
+            label = "MACRO_C_DR";
+        };
+
+        macro_c_ur: macro_c_ur {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UP_ARROW &kp RIGHT>;
+            label = "MACRO_C_UR";
+        };
+
+        macro_c_ul: macro_c_ul {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp UP_ARROW &kp RIGHT>;
+            label = "MACRO_C_UL";
+        };
+
+        macro_c_dl: macro_c_dl {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN_ARROW &kp LEFT_ARROW>;
+            label = "MACRO_C_DL";
+        };
+
+        macro_sign: macro_sign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp I &kp R &kp K &kp SPACE &kp LS(R) &kp O &kp Y &kp B &kp A &kp L>;
+            label = "MACRO_SIGN";
+        };
     };
 
     keymap {
