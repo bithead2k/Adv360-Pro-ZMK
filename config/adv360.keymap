@@ -1,11 +1,8 @@
-
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
-
-
 /* THIS FILE WAS GENERATED!
  *
  * This file was generated automatically. You may or may not want to
@@ -13,89 +10,187 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
-  behaviors {
-    #include "macros.dtsi"
+    behaviors {
+        #include "macros.dtsi"
 
-    hm: homerow_mods {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HOMEROW_MODS";
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        quick_tap_ms = <175>;
-        flavor = "tap-preferred";
-        bindings = <&kp>, <&kp>;
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
-  };
+
+    macros {
+        macro_hop2: macro_hop2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp O &kp P &kp L &kp O &kp P &kp H &kp O &kp B &kp E &kp N1 &kp EXCL &kp N1 &kp EXCL &kp RET>;
+            label = "MACRO_HOP2";
+        };
+
+        macro_pregunta: macro_pregunta {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI &kp QMARK &kp QMARK>;
+            label = "MACRO_PREGUNTA";
+        };
+
+        macro_md_example: macro_md_example {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(E) &kp LS(X) &kp LS(A) &kp LS(M) &kp LS(P) &kp LS(L) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_EXAMPLE";
+        };
+
+        macro_md_bug: macro_md_bug {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(B) &kp LS(U) &kp LS(G) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_BUG";
+        };
+
+        macro_md_success: macro_md_success {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(S) &kp LS(U) &kp LS(C) &kp LS(C) &kp LS(E) &kp LS(S) &kp LS(S) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_SUCCESS";
+        };
+
+        macro_md_note: macro_md_note {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(N) &kp LS(O) &kp LS(T) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_NOTE";
+        };
+
+        macro_md_danger: macro_md_danger {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(D) &kp LS(A) &kp LS(N) &kp LS(G) &kp LS(E) &kp LS(R) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_DANGER";
+        };
+
+        macro_md_fail: macro_md_fail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(F) &kp LS(A) &kp LS(I) &kp LS(L) &kp LS(U) &kp LS(R) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_FAIL";
+        };
+
+        macro_md_warning: macro_md_warning {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(W) &kp LS(A) &kp LS(R) &kp LS(N) &kp LS(I) &kp LS(N) &kp LS(G) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_WARNING";
+        };
+
+        macro_md_tip: macro_md_tip {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(T) &kp LS(I) &kp LS(P) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_TIP";
+        };
+
+        macro_md_todo: macro_todo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(T) &kp LS(O) &kp LS(D) &kp LS(O) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_TODO";
+        };
+
+        macro_md_info: macro_md_info {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(I) &kp LS(N) &kp LS(F) &kp LS(O) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_MD_INFO";
+        };
+
+        macro_question: macro_question {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(Q) &kp LS(U) &kp LS(E) &kp LS(S) &kp LS(T) &kp LS(I) &kp LS(O) &kp LS(N) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_QUESTION";
+        };
+
+        macro_quote: macro_quote {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GT &kp LBKT &kp EXCL &kp LS(Q) &kp LS(U) &kp LS(O) &kp LS(T) &kp LS(E) &kp RIGHT_BRACKET &kp SPACE &kp LG(MINUS) &kp MINUS &kp MINUS &kp SPACE>;
+            label = "MACRO_QUOTE";
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
-
         default_layer {
             bindings = <
-    &kp EQUAL       &kp N1      &lt 5 N2    &kp N3   &lt 2 N4  &kp N5                &to 5                                                                      &mo 5  &kp N6  &lt 2 N7     &kp N8   &lt 1 N9         &kp N0  &kp MINUS
-      &kp ESC        &kp Q         &kp W     &kp E      &kp R   &kp T                &to 2                                                                      &mo 2   &kp Y     &kp U      &kp I      &kp O          &kp P   &kp BSLH
-      &kp TAB        &kp A         &kp S     &kp D      &kp F   &kp G                &mo 4  &kp LCTRL  &kp LALT                  &kp RIGHT_ALT   &kp RCTRL      &mo 4   &kp H     &kp J      &kp K      &kp L  &kp SEMICOLON    &kp SQT
-        &kp Z   &kp LSHIFT         &kp X     &kp C      &kp V   &kp B                                  &kp HOME                      &kp PG_UP                          &kp N     &kp M  &kp COMMA    &kp DOT      &kp RSHFT   &kp FSLH
- &kp LEFT_GUI  &macro_copy  &macro_paste  &kp LEFT  &kp RIGHT                    &kp ENTER   &kp BSPC   &kp END                      &kp PG_DN  &kp DELETE  &kp SPACE          &kp DOWN     &kp UP  &kp GRAVE          &to 1   &kp RGUI
+&kp EQUAL     &kp N1       &lt 5 N2      &kp N3    &lt 2 N4   &kp N5  &to 5                                                          &mo 5      &kp N6  &lt 2 N7  &kp N8     &lt 1 N9   &kp N0         &kp MINUS
+&kp ESC       &kp Q        &kp W         &kp E     &kp R      &kp T   &to 2                                                          &mo 2      &kp Y   &kp U     &kp I      &kp O      &kp P          &kp BSLH
+&kp TAB       &kp A        &kp S         &kp D     &kp F      &kp G   &mo 4      &kp LCTRL  &kp LALT      &kp RIGHT_ALT  &kp RCTRL   &mo 4      &kp H   &kp J     &kp K      &kp L      &kp SEMICOLON  &kp SQT
+&kp Z         &kp LSHIFT   &kp X         &kp C     &kp V      &kp B                         &kp HOME      &kp PG_UP                             &kp N   &kp M     &kp COMMA  &kp DOT    &kp RSHFT      &kp FSLH
+&kp LEFT_GUI  &macro_copy  &macro_paste  &kp LEFT  &kp RIGHT          &kp ENTER  &kp BSPC   &kp END       &kp PG_DN      &kp DELETE  &kp SPACE          &kp DOWN  &kp UP     &kp GRAVE  &to 1          &kp RGUI
             >;
         };
 
         layer_keypad {
             bindings = <
- &kp KP_EQUAL       &kp N1        &kp N2     &kp N3     &kp N4     &kp N5                &to 5                                                                                   &to 0             &kp N6  &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MINUS  &kp KP_MULTIPLY
-      &kp ESC    &kp KP_N1     &kp KP_N2  &kp KP_N3  &kp KP_N4  &kp KP_N5                &none                                                                                   &none          &kp KP_N6   &kp KP_N7     &kp KP_N8      &kp KP_N9   &kp KP_PLUS    &kp KP_DIVIDE
-      &kp TAB        &kp A         &kp B      &kp C      &kp D      &kp E                &none      &kp LCTRL  &kp LALT                  &kp RIGHT_ALT      &kp RCTRL            &none  &macro_hoplophobe   &kp KP_N4     &kp KP_N5      &kp KP_N6   &kp KP_PLUS     &kp KP_ENTER
-        &none        &none         &kp F      &none      &none      &none                                      &kp HOME                      &kp PG_UP                                              &none   &kp KP_N1     &kp KP_N2      &kp KP_N3  &kp KP_ENTER     &kp KP_ENTER
-     &kp LGUI  &macro_copy  &macro_paste   &kp LEFT  &kp RIGHT                       &kp ENTER  &kp BACKSPACE   &kp END                      &kp PG_DN  &mt DEL KP_N0  &mt SPACE KP_N0                      &kp KP_N0     &kp KP_N0     &kp KP_DOT         &to 2         &kp RGUI
+&kp KP_EQUAL  &kp N1       &kp N2        &kp N3     &kp N4     &kp N5     &to 5                                                                 &to 0            &kp N6             &kp KP_NUM  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MINUS  &kp KP_MULTIPLY
+&kp ESC       &kp KP_N1    &kp KP_N2     &kp KP_N3  &kp KP_N4  &kp KP_N5  &none                                                                 &none            &kp KP_N6          &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_PLUS   &kp KP_DIVIDE
+&kp TAB       &kp A        &kp B         &kp C      &kp D      &kp E      &none      &kp LCTRL      &kp LALT      &kp RIGHT_ALT  &kp RCTRL      &none            &macro_hoplophobe  &kp KP_N4   &kp KP_N5     &kp KP_N6      &kp KP_PLUS   &kp KP_ENTER
+&none         &none        &kp F         &none      &none      &none                                &kp HOME      &kp PG_UP                                      &none              &kp KP_N1   &kp KP_N2     &kp KP_N3      &kp KP_ENTER  &kp KP_ENTER
+&kp LGUI      &macro_copy  &macro_paste  &kp LEFT   &kp RIGHT             &kp ENTER  &kp BACKSPACE  &kp END       &kp PG_DN      &mt DEL KP_N0  &mt SPACE KP_N0                     &kp KP_N0   &kp KP_N0     &kp KP_DOT     &to 2         &kp RGUI
             >;
         };
 
         layer_fn {
             bindings = <
-  &kp F1   &kp F2          &kp F3          &kp F4           &kp F5           &kp F6            &to 5                                                   &to 0       &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
- &kp F16  &kp F20     &macro_c_ul    &kp UP_ARROW      &macro_c_ur      &macro_c_ur            &to 0                                                   &to 0        &none   &none   &none    &none    &none  &kp F24
- &kp F15  &kp F19  &kp LEFT_ARROW           &none  &kp RIGHT_ARROW  &kp RIGHT_ARROW            &none   &none   &none                   &none   &none   &none  &macro_hop2   &none   &none    &none    &none  &kp F23
- &kp F14  &kp F18     &macro_c_dl  &kp DOWN_ARROW      &macro_c_dr            &none                            &none                   &none                        &none   &none   &none    &none    &none  &kp F22
- &kp F13  &kp F17     &macro_c_dl  &kp DOWN_ARROW      &macro_c_dr                             &none   &none   &none                   &none   &none   &none                &none   &none    &none    &to 0  &kp F21
+&kp F1   &kp F2   &kp F3          &kp F4          &kp F5           &kp F6           &to 5                                  &to 0  &kp F7       &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F16  &kp F20  &macro_c_ul     &kp UP_ARROW    &macro_c_ur      &macro_c_ur      &to 0                                  &to 0  &none        &none   &none   &none    &none    &kp F24
+&kp F15  &kp F19  &kp LEFT_ARROW  &none           &kp RIGHT_ARROW  &kp RIGHT_ARROW  &none  &none  &none      &none  &none  &none  &macro_hop2  &none   &none   &none    &none    &kp F23
+&kp F14  &kp F18  &macro_c_dl     &kp DOWN_ARROW  &macro_c_dr      &none                          &none      &none                &none        &none   &none   &none    &none    &kp F22
+&kp F13  &kp F17  &macro_c_dl     &kp DOWN_ARROW  &macro_c_dr                       &none  &none  &none      &none  &none  &none               &none   &none   &none    &to 0    &kp F21
             >;
         };
 
         layer_mod {
             bindings = <
-  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &to 0                                                                          &trans   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none            &bootloader                                                                     &bootloader   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
-  &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &to 0   &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &to 0                                                  &trans                  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none         &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &to 0  &none
             >;
         };
 
         layer_UTF8 {
             bindings = <
-  &macro_ibold   &macro_md_fail      &macro_md_bug    &macro_quotes    &macro_bold  &macro_emacronu                        &to 5                                                           &to 0              &none            &none           &none             &none               &none   &macro_h4
- &macro_italic  &macro_md_quote  &macro_md_warning    &macro_parens   &macro_ticks   &macro_md_todo                        &none                                                           &none              &none  &macro_uumlautl  &macro_md_info   &macro_oumlautl       &macro_md_tip   &macro_h2
-   &macro_bold  &macro_aumlautl          &macro_ss    &macro_braces   &macro_range            &none                        &to 0   &none   &none                   &none   &none           &to 0  &macro_hoplophobe            &none     &macro_sign  &macro_md_danger               &none   &macro_h1
-  &macro_score            &none  &macro_md_example  &macro_brackets  &macro_strike            &none                                        &none                   &none                             &macro_ntildel     &macro_mdimg           &none             &none     &macro_pregunta   &macro_h3
- &macro_strike            &none              &none   &macro_dquotes   &macro_score                             &macro_md_success   &none   &none                   &none   &none  &macro_md_note                               &none           &none             &none  &macro_md_question  &macro_toc
+&macro_ibold   &macro_md_fail   &macro_md_bug      &macro_quotes    &macro_bold    &macro_emacronu  &to 5                                              &to 0           &none              &none            &none           &none             &none               &macro_h4
+&macro_italic  &macro_md_quote  &macro_md_warning  &macro_parens    &macro_ticks   &macro_md_todo   &none                                              &none           &none              &macro_uumlautl  &macro_md_info  &macro_oumlautl   &macro_md_tip       &macro_h2
+&macro_bold    &macro_aumlautl  &macro_ss          &macro_braces    &macro_range   &none            &to 0              &none  &none      &none  &none  &to 0           &macro_hoplophobe  &none            &macro_sign     &macro_md_danger  &none               &macro_h1
+&macro_score   &none            &macro_md_example  &macro_brackets  &macro_strike  &none                                      &none      &none                         &macro_ntildel     &macro_mdimg     &none           &none             &macro_pregunta     &macro_h3
+&macro_strike  &none            &none              &macro_dquotes   &macro_score                    &macro_md_success  &none  &none      &none  &none  &macro_md_note                     &none            &none           &none             &macro_md_question  &macro_toc
             >;
         };
 
         layer_Layers {
             bindings = <
-  &none   &none   &none   &none   &none   &none            &to 0                                                   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none            &none                                                   &none   &none   &none   &none   &none   &none   &none
-  &none   &to 0   &to 1   &to 2   &to 3   &to 4            &none   &none   &none                   &none   &none   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none                            &none                   &none                   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none                    &none   &none   &none                   &none   &none   &none           &none   &none   &none   &to 0   &none
+&none  &none  &none  &none  &none  &none  &to 0                                  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none                                  &none  &none  &none  &none  &none  &none  &none
+&none  &to 0  &to 1  &to 2  &to 3  &to 4  &none  &none  &none      &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                &none      &none                &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none         &none  &none  &none      &none  &none  &none         &none  &none  &none  &to 0  &none
             >;
         };
-
     };
 };
