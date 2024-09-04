@@ -240,6 +240,48 @@
             bindings = <&kp LS(K) &kp I &kp R &kp K &kp SPACE &kp LS(R) &kp O &kp Y &kp B &kp A &kp L>;
             label = "MACRO_SIGN";
         };
+
+        macro_emacronu: macro_emacronu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(E)) &kp CARET>;
+            label = "MACRO_EMACRONU";
+        };
+
+        macro_range: macro_range {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp GT &kp LEFT>;
+            label = "MACRO_RANGE";
+        };
+
+        macro_hyper: macro_hyper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C_MENU>;
+            label = "MACRO_HYPER";
+        };
+
+        macro_meh: macro_meh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LC(LSHFT))>;
+            label = "MACRO_MEH";
+        };
+
+        macro_quit: macro_quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp E &kp X &kp I &kp T &kp RET &kp BSLH &kp Q &kp RET>;
+            label = "MACRO_QUIT";
+        };
+
+        macro_vimexit: macro_vimexit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp X &kp RET>;
+            label = "MACRO_VIMEXIT";
+        };
     };
 
     keymap {
