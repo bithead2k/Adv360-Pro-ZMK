@@ -366,6 +366,55 @@
             bindings = <&kp LG(A) &kp COLON>;
             label = "MACRO_AUMLAUTL";
         };
+
+        macro_mdimg: macro_mdimg {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL &kp LBKT &kp PIPE &kp N3 &kp N5 &kp N0 &kp RIGHT_BRACKET &kp LPAR &kp RPAR &kp HOME &kp GT &kp GT>;
+            label = "MACRO_MDIMG";
+        };
+
+        macro_quotes: macro_quotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp SQT &kp LEFT_ARROW>;
+            label = "MACRO_QUOTES";
+        };
+
+        macro_dquotes: macro_dquotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp DQT &kp LEFT>;
+            label = "MACRO_DQUOTES";
+        };
+
+        macro_braces: macro_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RBRC &kp LEFT>;
+            label = "MACRO_BRACES";
+        };
+
+        macro_parens: macro_parens {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR &kp RPAR &kp LEFT_ARROW>;
+            label = "MACRO_PARENS";
+        };
+
+        macro_brackets: macro_brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT &kp RIGHT_BRACKET &kp LEFT_ARROW>;
+            label = "MACRO_BRACKETS";
+        };
+
+        macro_kinesis: macro_kinesis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(K) &kp I &kp N &kp E &kp S &kp I &kp S>;
+            label = "MACRO_KINESIS";
+        };
     };
 
     keymap {
